@@ -34,6 +34,15 @@ ChatService::ChatService()
     //
     msgHandlerMap.insert({LOGINOUT_MSG, std::bind(&ChatService::loginout, this, _1, _2, _3)});
 
+
+
+    // 连接redis服务器
+    if (m_redis.connect())
+    {
+        // 设置上报消息的回调
+        m_redis.init_notify_handler(std::bind(&ChatService::handleRedisSubscribeMessage, this, _1, _2));
+    }
+
 }
 
 //获取消息对应的处理器
@@ -91,6 +100,8 @@ void ChatService::login(const TcpConnectionPtr &conn,json &js,Timestamp time)
                 userConnMap.insert({id,conn});
             }
 
+            // id用户登录成功后，向redis订阅channel(id)
+            m_redis.subscribe(id); 
     
             json response;
             response["msgid"]=LOGIN_MSG_ACK;
@@ -216,7 +227,7 @@ void ChatService::loginout(const TcpConnectionPtr &conn, json &js, Timestamp tim
     }
 
     // 用户注销，相当于就是下线，在redis中取消订阅通道
-    //_redis.unsubscribe(userid); 
+    m_redis.unsubscribe(userid); 
 
     // 更新用户的状态信息
     User user(userid, "", "", "offline");
@@ -241,6 +252,11 @@ void ChatService::clientCloseException(const TcpConnectionPtr &conn)
                 }
             }
         }   
+
+        // 用户注销，相当于就是下线，在redis中取消订阅通道
+        m_redis.unsubscribe(user.getId()); 
+
+
     //更新在线状态
     if(user.getId()!=-1)
     { 
@@ -270,6 +286,15 @@ void ChatService::oneChat(const TcpConnectionPtr &conn,json &js,Timestamp time)
         }
     }
 
+    // 查询toid是否在线 
+    User user = userModel.query(toid);
+    if (user.getState() == "online")
+    {
+        m_redis.publish(toid, js.dump());
+        return;
+    }
+
+    
    
         //toid不在线 存储离线消息   
         offlinemsgModel.insert(toid,js.dump());
@@ -328,12 +353,36 @@ void ChatService::groupChat(const TcpConnectionPtr &conn,json &js,Timestamp time
             it->second->send(js.dump());
         }
         else{
-            //存储离线消息
-            offlinemsgModel.insert(id,js.dump());
+             // 查询toid是否在线 
+             User user = userModel.query(id);
+             if (user.getState() == "online")
+             {
+                m_redis.publish(id, js.dump());
+             }
+             else
+             {
+                // 存储离线群消息
+                offlinemsgModel.insert(id, js.dump());
+             }
         }
     }
 
 }
 
+
+// 从redis消息队列中获取订阅的消息
+void ChatService::handleRedisSubscribeMessage(int userid, string msg)
+{
+    lock_guard<mutex> lock(connMutex);
+    auto it = userConnMap.find(userid);
+    if (it != userConnMap.end())
+    {
+        it->second->send(msg);
+        return;
+    }
+
+    // 存储该用户的离线消息
+    offlinemsgModel.insert(userid, msg);
+}
 
 

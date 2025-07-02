@@ -7,6 +7,7 @@
 #include <memory>
 #include <mutex>
 
+#include "redis.hpp"
 #include "json.hpp"
 #include "UserModel.hpp"
 #include "OfflineMsgModel.hpp"
@@ -42,6 +43,8 @@ private:
     OfflineMsgModel offlinemsgModel;//离线消息
     GroupModel groupModel;
 
+    Redis m_redis;
+
 public:
     //获取单例对象
     static ChatService * instance();
@@ -74,6 +77,8 @@ public:
     void groupChat(const TcpConnectionPtr &conn,json &js,Timestamp time);
 
     void loginout(const TcpConnectionPtr &conn,json &js,Timestamp time);
+
+    void handleRedisSubscribeMessage(int userid, string msg);
 };
 
 

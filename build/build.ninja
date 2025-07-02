@@ -108,58 +108,65 @@ build cmake_object_order_depends_target_ChatServer: phony || src/server/CMakeFil
 build src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/ChatServer.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/ChatService.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/main.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/main.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/main.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir
 
 build src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/db/db.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/db
 
 build src/server/CMakeFiles/ChatServer.dir/model/FriendModel.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/model/FriendModel.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/model/FriendModel.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/model
 
 build src/server/CMakeFiles/ChatServer.dir/model/GroupModel.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/model/GroupModel.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/model/GroupModel.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/model
 
 build src/server/CMakeFiles/ChatServer.dir/model/OfflineMsgModel.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/model/OfflineMsgModel.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/model/OfflineMsgModel.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/model
 
 build src/server/CMakeFiles/ChatServer.dir/model/UserModel.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/model/UserModel.cpp || cmake_object_order_depends_target_ChatServer
   DEP_FILE = src/server/CMakeFiles/ChatServer.dir/model/UserModel.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/model
+
+build src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o: CXX_COMPILER__ChatServer_Debug /home/hansao/Desktop/server/src/server/redis/redis.cpp || cmake_object_order_depends_target_ChatServer
+  DEP_FILE = src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o.d
+  FLAGS = -g -g
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
+  OBJECT_FILE_DIR = src/server/CMakeFiles/ChatServer.dir/redis
 
 
 # =============================================================================
@@ -169,9 +176,9 @@ build src/server/CMakeFiles/ChatServer.dir/model/UserModel.cpp.o: CXX_COMPILER__
 #############################################
 # Link the executable ../bin/ChatServer
 
-build ../bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o src/server/CMakeFiles/ChatServer.dir/model/FriendModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/GroupModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/OfflineMsgModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/UserModel.cpp.o
+build ../bin/ChatServer: CXX_EXECUTABLE_LINKER__ChatServer_Debug src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o src/server/CMakeFiles/ChatServer.dir/main.cpp.o src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o src/server/CMakeFiles/ChatServer.dir/model/FriendModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/GroupModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/OfflineMsgModel.cpp.o src/server/CMakeFiles/ChatServer.dir/model/UserModel.cpp.o src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o
   FLAGS = -g -g
-  LINK_LIBRARIES = -lmuduo_base  -lmuduo_net  -lmysqlclient  -lpthread  -lpthread
+  LINK_LIBRARIES = -lmuduo_base  -lmuduo_net  -lmysqlclient  -lpthread  -lhiredis  -lpthread  -lhiredis
   OBJECT_DIR = src/server/CMakeFiles/ChatServer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -218,7 +225,7 @@ build cmake_object_order_depends_target_ChatClient: phony || src/client/CMakeFil
 build src/client/CMakeFiles/ChatClient.dir/main.cpp.o: CXX_COMPILER__ChatClient_Debug /home/hansao/Desktop/server/src/client/main.cpp || cmake_object_order_depends_target_ChatClient
   DEP_FILE = src/client/CMakeFiles/ChatClient.dir/main.cpp.o.d
   FLAGS = -g -g
-  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
+  INCLUDES = -I/home/hansao/Desktop/server/include -I/home/hansao/Desktop/server/include/server -I/home/hansao/Desktop/server/include/server/redis -I/home/hansao/Desktop/server/include/server/db -I/home/hansao/Desktop/server/include/server/model -I/home/hansao/Desktop/server/thirdparty
   OBJECT_DIR = src/client/CMakeFiles/ChatClient.dir
   OBJECT_FILE_DIR = src/client/CMakeFiles/ChatClient.dir
 
